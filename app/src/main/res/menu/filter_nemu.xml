@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/all"
+        android:title="All">
+
+    </item>
+    <item
+        android:title="Abs"
+        android:id="@+id/abs_id" />
+    <item
+        android:title="Arms"
+        android:id="@+id/arm_id" />
+    <item
+        android:title="Back"
+        android:id="@+id/back_id" />
+    <item
+    android:title="Calves"
+    android:id="@+id/calves_id" />
+    <item
+        android:title="Chest"
+        android:id="@+id/chest_id" />
+    <item
+        android:title="Legs"
+        android:id="@+id/legs_id" />
+    <item
+        android:title="Shoulders"
+        android:id="@+id/shoulders_id" />
+</menu>

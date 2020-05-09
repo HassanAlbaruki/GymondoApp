@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/data_lyout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:visibility="visible"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/loop_main"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.228" />
+
+        <TextView
+            android:id="@+id/tv_big"
+            style="@style/BigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Get Fit and Happy at Home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo"
+            app:layout_constraintVertical_bias="0.10" />
+
+        <TextView
+            android:id="@+id/tv_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Unlock your all-access membership to HIIT, Yoga \nand more, with over 20 fitness programs and \n200+ motivating workouts adapted to your \nfitness level and goals."
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_big"
+            app:layout_constraintVertical_bias="0.034" />
+
+        <TextView
+            android:id="@+id/loading"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:text="Loading ..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/bt_start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_small">
+
+        </TextView>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/bt_start"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Get Started"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_small"
+            app:layout_constraintVertical_bias="0.654" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        android:id="@+id/no_connection_lyout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/no_connection">
+
+        </ImageView>
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:text="Whoops!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Something went wrong.\nCheck your connection or try again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <Button
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:id="@+id/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="retry"
+            android:textColor="@color/colorPrimary">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
+
