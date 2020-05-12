@@ -23,8 +23,8 @@ e. The muscles trained by this exercise (comma separated), if provided. .(but ex
 after getting all the required data I need to send them to my adapter to bind every exercise item
 using for loop for images and muscles and equipment and categories
 Suggestion: 
-the best way to not calling all these APIs and use for loops to get exercise full item infos is backend level
-exercise list API should contain exerciseId Integer, exerciseName String , exerciseCategoryNane String, 
+the best way to not calling all these APIs and use for loops to get exercise full item infos is backend level,
+exercise list API should contain exerciseId Integer, exerciseName String , exerciseCategoryName String, 
 equipments Array(String), muscles Array(String),imageurl String
 this succession possibly fast up the response
 now we have our exercises list ready and listed in the HomeActivity
